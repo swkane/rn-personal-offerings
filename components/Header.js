@@ -6,7 +6,7 @@ export default () => (
     leftComponent={{ icon: "menu", color: "#fff" }}
     centerComponent={{
       text: "offerings",
-      style: { color: "#fff", fontSize: 20 }
+      style: { color: "#fff", fontSize: 20, fontFamily: "roboto" }
     }}
     backgroundColor={"#3fb542"}
   />

@@ -17,8 +17,8 @@ const styles = StyleSheet.create({
   },
   text: {
     flex: 1,
-    fontSize: 30,
+    fontSize: 33,
     textAlign: "right",
-    fontWeight: "bold"
+    fontFamily: "roboto-bold"
   }
 });
