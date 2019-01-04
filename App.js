@@ -1,25 +1,22 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
+
 import Header from "./components/Header";
+import HeroBanner from "./components/HeroBanner";
 
 export default class App extends React.Component {
   render() {
     return (
-      <React.Fragment>
+      <View>
         <Header />
-        <View style={styles.container}>
-          <Text>Open up App.js to start working on your app!</Text>
-        </View>
-      </React.Fragment>
+        <HeroBanner />
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
+    width: "100%"
   }
 });
