@@ -1,5 +1,6 @@
 import React from "react";
 import { Text, View, Image, FlatList, StyleSheet } from "react-native";
+import { Card, ListItem, Button } from "react-native-elements";
 
 const API_NEARBY =
   "http://offerings-academy-staging-api.herokuapp.com/offerings/nearby";
@@ -25,10 +26,16 @@ export default class Nearby extends React.Component {
           <Text>Loading...</Text>
         ) : (
           <View>
-            <Text>{this.state.data[0].attributes.title}</Text>
             <FlatList
               data={this.state.data}
-              renderItem={({ item }) => <Text>{item.attributes.title}</Text>}
+              renderItem={({ item }) => (
+                <Card
+                  title={item.attributes.title}
+                  image={{ uri: item.attributes.image }}
+                >
+                  <Text>{item.attributes.description}</Text>
+                </Card>
+              )}
               keyExtractor={item => item.id}
             />
           </View>
