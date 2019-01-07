@@ -4,6 +4,7 @@ import { Font } from "expo";
 
 import Header from "./components/Header";
 import HeroBanner from "./components/HeroBanner";
+import Nearby from "./components/Nearby";
 
 export default class App extends React.Component {
   state = {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
           <React.Fragment>
             <Header />
             <HeroBanner />
+            <Nearby />
           </React.Fragment>
         ) : null}
       </View>
